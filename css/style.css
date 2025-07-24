@@ -50,6 +50,23 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+
+}
+
+header.scroll {
+    background-color: #00000069;
+
+}
+
+header.scroll .scroll-top-btn {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.nav-btn {
+    display: none;
+
 }
 
 header .title a {
@@ -90,6 +107,7 @@ nav ul a {
 
 #s02 {
     padding: 200px 0;
+    height: auto;
 }
 
 #s02 .t-wrap {
@@ -176,6 +194,7 @@ nav ul a {
 
 #s04 {
     padding: 200px 0;
+    height: auto;
 }
 
 #s04 .t-wrap {
@@ -187,7 +206,7 @@ nav ul a {
     position: absolute;
     right: 0;
     top: 50%;
-    /* margin-top: -24px; 아래랑 동일한 효과를 줌 */
+    margin-top: -24px;
     transform: translateY(-50%);
 }
 
@@ -199,6 +218,7 @@ nav ul a {
     text-align: center;
     max-width: 1400px;
     margin: auto;
+
 
 }
 
@@ -215,4 +235,56 @@ nav ul a {
 
 .s04-list li:nth-child(evan) {
     margin-top: 60px;
+}
+
+.s04-list li:nth-child(odd) {
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #e3e0e0;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.foot-list {
+
+    display: flex;
+    gap: 20px;
+}
+
+.foot-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #000000;
+}
+
+.text {
+    color: #000;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    background-color: #2e8cea87;
+    z-index: 4;
+    right: 20px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 3s;
+    opacity: 0;
+    transform: translateY(50px);
 }
